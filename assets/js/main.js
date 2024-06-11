@@ -1,0 +1,68 @@
+/*=============== HAMBURGER MENU ===============*/
+
+function menuOnClick() {
+	document.getElementById("menu-bar").classList.toggle("change");
+	document.getElementById("nav").classList.toggle("change");
+	document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+/*=============== CLOSE HAMBURGER MENU ON CLICK ===============*/
+
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+function scrollHeader() {
+	const header = document.getElementById("header");
+
+	if (this.scrollY >= 50) header.classList.add("scroll-header");
+	else header.classList.remove("scroll-header");
+}
+window.addEventListener("scroll", scrollHeader);
+
+/*=============== ACCORDION OPENER ===============*/
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function () {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+}
+
+/*=============== CURRENT NAVLINK ACTIVATOR ===============*/
+
+const sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+	let scrollY = window.pageYOffset;
+
+	sections.forEach((current) => {
+		const sectionHeight = current.offsetHeight;
+		const sectionTop = current.offsetTop - 300;
+		var sectionId = current.getAttribute("id");
+		if (
+			sectionId == "contact" ||
+			sectionId == "footer" ||
+			sectionId == "home"
+		) {
+			return;
+		}
+
+		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+			document
+				.querySelector(".nav a[href*=" + sectionId + "]")
+				.classList.add("active-link");
+		} else {
+			document
+				.querySelector(".nav a[href*=" + sectionId + "]")
+				.classList.remove("active-link");
+		}
+	});
+}
