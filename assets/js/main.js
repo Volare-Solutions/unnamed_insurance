@@ -66,3 +66,41 @@ function navHighlighter() {
 		}
 	});
 }
+
+/*=============== FORM LISTENER ===============*/
+
+const deductibleField = document.getElementById("deductible");
+deductibleField.addEventListener("input", updateValueDeductible);
+
+const incomeField = document.getElementById("income");
+incomeField.addEventListener("input", updateValueIncome);
+
+function updateValueDeductible(e) {
+	newValue = e.target.value;
+	newValue = newValue.replace(/\D+/g, "");
+
+	if (newValue.indexOf("$") != 0) {
+		newValue = "$" + newValue;
+	}
+
+	if (e.target.value == "$") {
+		newValue = "";
+	}
+
+	deductibleField.value = newValue;
+}
+
+function updateValueIncome(e) {
+	newValue = e.target.value;
+	newValue = newValue.replace(/\D+/g, "");
+
+	if (newValue.indexOf("$") != 0) {
+		newValue = "$" + newValue;
+	}
+
+	if (e.target.value == "$") {
+		newValue = "";
+	}
+
+	incomeField.value = newValue;
+}

@@ -336,19 +336,9 @@ body {
 
 .home__container {
   background-size: cover;
-  background-image: url("assets/img/famiky3.jpg");
-  background-position: 20% 50%;
+  background-image: url("../../img/famiky3.jpg");
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .home__data {
@@ -368,13 +358,7 @@ body {
           align-items: center;
   padding: 100px 50px;
   z-index: 2;
-  max-width: 450px;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  background-color: #d5f6fbd7;
-  border-radius: 30px;
-  margin-bottom: 10%;
+  max-width: 500px;
 }
 
 .home__title {
@@ -1096,9 +1080,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-size: cover;
     background-image: url(assets/img/famiky3.jpg);
   }
@@ -1178,13 +1162,6 @@ body {
   .scrollup {
     right: 3rem;
   }
-}
-
-.dolar-sign::after {
-  position: absolute;
-  left: -10px;
-  top: 9px;
-  content: "$";
 }
 
 .grecaptcha-badge {
