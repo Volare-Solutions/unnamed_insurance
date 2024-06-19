@@ -9,10 +9,6 @@
 			content="Get personalized health insurance guidance and support."
 		/>
 		<meta name="author" content="AngelHealth" />
-		<link
-			href="https://assets.calendly.com/assets/external/widget.css"
-			rel="stylesheet"
-		/>
 		<link rel="stylesheet" href="index.css" />
 		<link
 			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
@@ -196,25 +192,20 @@
 					</ul>
 				</div>
 				<div class="form-container">
-					<form id="contact-form" action="https://submit-form.com/iExn1BoD">
-						<input
-							type="hidden"
-							name="_redirect"
-							value="http://127.0.0.1:5500/exito.html"
-						/>
+					<form id="contact-form">
 						<div class="form-row">
 							<div class="input-data">
 								<input type="text" name="name" required />
 								<label for="name">Name</label>
 							</div>
 							<div class="input-data">
-								<input type="text" name="email" required />
+								<input type="email" name="email" required />
 								<label for="email">Email</label>
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="input-data">
-								<input type="text" name="phone" required />
+								<input type="tel" name="phone" required id="phone"/>
 								<label for="phone">Phone</label>
 							</div>
 							<div class="input-data">
