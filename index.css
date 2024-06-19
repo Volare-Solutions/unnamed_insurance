@@ -149,7 +149,7 @@ body {
 .header__container {
   margin: auto;
   width: 100%;
-  max-width: 1024px;
+  max-width: 1086px;
   height: 80px;
   padding: 10px;
   display: -webkit-box;
@@ -311,6 +311,7 @@ body {
 .nav__logo {
   width: 60px;
   height: 60px;
+  margin-top: -10px;
 }
 
 .nav__logo img {
@@ -337,9 +338,10 @@ body {
 .home__container {
   background-size: cover;
   background-image: url("assets/img/famiky3.jpg");
-  background-position: 20% 50%;
+  background-position: 40% 50%;
   width: 100vw;
   height: 100vh;
+  padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,9 +368,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 50px;
+  padding: 60px 50px;
   z-index: 2;
-  max-width: 450px;
+  max-width: 100%;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
@@ -698,6 +700,7 @@ body {
   color: black;
   letter-spacing: 2px;
   padding-left: 1.7rem;
+  padding-right: 1rem;
   text-align: left;
 }
 
@@ -968,7 +971,7 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
     border-radius: 20px;
-    width: 240px;
+    width: 315px;
     height: 40px;
     background-color: var(--mustard-color);
     font-size: 1rem;
@@ -995,9 +998,11 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-position: initial;
   }
   .home__data {
     margin: 0 auto;
+    max-width: 450px;
   }
   .about-us__color-wrapper > section {
     padding: 5rem 0 6rem;
@@ -1159,6 +1164,9 @@ body {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .nav__logo {
+    margin-top: initial;
+  }
 }
 
 /* For large devices */
@@ -1177,6 +1185,19 @@ body {
   }
   .scrollup {
     right: 3rem;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .contact__button {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contact__button {
+    margin-right: 80px;
   }
 }
 
