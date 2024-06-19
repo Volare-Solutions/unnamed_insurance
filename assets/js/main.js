@@ -72,12 +72,10 @@ function navHighlighter() {
 const deductibleField = document.getElementById("deductible");
 deductibleField.addEventListener("input", updateValueDeductible);
 
-const incomeField = document.getElementById("income");
-incomeField.addEventListener("input", updateValueIncome);
-
 function updateValueDeductible(e) {
 	newValue = e.target.value;
 	newValue = newValue.replace(/\D+/g, "");
+	newValue = newValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 	if (newValue.indexOf("$") != 0) {
 		newValue = "$" + newValue;
@@ -90,9 +88,13 @@ function updateValueDeductible(e) {
 	deductibleField.value = newValue;
 }
 
+const incomeField = document.getElementById("income");
+incomeField.addEventListener("input", updateValueIncome);
+
 function updateValueIncome(e) {
 	newValue = e.target.value;
 	newValue = newValue.replace(/\D+/g, "");
+	newValue = newValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 	if (newValue.indexOf("$") != 0) {
 		newValue = "$" + newValue;
@@ -103,4 +105,23 @@ function updateValueIncome(e) {
 	}
 
 	incomeField.value = newValue;
+}
+
+const phoneField = document.getElementById("phone");
+phoneField.addEventListener("input", updateValuePhone);
+
+function updateValuePhone(e) {
+	input = e.target.value;
+	input = input.replace(/\D/g, "");
+	var size = input.length;
+	if (size > 0) {
+		input = "(" + input;
+	}
+	if (size > 3) {
+		input = input.slice(0, 4) + ") " + input.slice(4, 11);
+	}
+	if (size > 6) {
+		input = input.slice(0, 9) + "-" + input.slice(9);
+	}
+	phoneField.value = input;
 }
