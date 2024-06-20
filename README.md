@@ -9,7 +9,7 @@ This project is a static website that allows users to request pricing informatio
 - Pricing Request Form: Users can fill out a form to request pricing information.
 - Toast Notifications: Displays success and error messages upon form submission.
 
-## Setup
+## Setup ⚙️
 
 1. Install Dependencies:
 
