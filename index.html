@@ -1,336 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>AngelHealth</title>
-		<meta
-			name="description"
-			content="Get personalized health insurance guidance and support."
-		/>
-		<meta name="author" content="AngelHealth" />
-		<link rel="stylesheet" href="index.css" />
-		<link
-			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-			rel="stylesheet"
-		/>
-		<meta property="og:title" content="AngelHealth" />
-		<meta property="og:type" content="website" />
+  	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AngelHealth</title>
+    <meta
+      name="description"
+      content="Get personalized health insurance guidance and support."
+    />
+    <meta name="author" content="AngelHealth" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta property="og:title" content="AngelHealth" />
+    <meta property="og:type" content="website" />
 
-		<meta
-			property="og:description"
-			content="Get personalized health insurance guidance and support."
-		/>
+    <meta
+      property="og:description"
+      content="Get personalized health insurance guidance and support."
+    />
 
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-	</head>
-	<body>
-		<header class="header" id="header">
-			<div class="header__container">
-				<a href="#home" class="nav__logo">
-					<img src="logo-placeholder-image.png" />
-				  </a>
-				<div id="menu">
-					<div id="menu-bar" onclick="menuOnClick()">
-						<div id="bar1" class="bar"></div>
-						<div id="bar2" class="bar"></div>
-						<div id="bar3" class="bar"></div>
-					</div>					
-					<nav class="nav" id="nav">
-						<ul>
-							<li><a href="#howitworks">How it works</a></li>
-							<li><a href="#about-us">About us</a></li>
-							<li><a href="#questions">FAQs</a></li>
-						</ul>
-					</nav>
-				
-				</div>
-				<a href="#contact" class="contact__button">Get more information</a>
-				<div class="menu-bg" id="menu-bg"></div>
-			</div>
-		</header>
-		<section class="home" id="home">
-			<div class="home__container">
-				<div class="home__data">
-					<h1 class="home__title">Lorem ipsum dolor</h1>
-					<p class="home__description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius
-						sit amet mattis vulputate enim nulla aliquet.
-					</p>
-					<a href="#about-us" class="home__btn">Learn More</a>
-				</div>
-			</div>
-		</section>
-		<div class="howitworks__color-wrapper">
-			<section class="howitworks section container" id="howitworks">
-				<div class="howitworks__data section__data">
-					<h2 class="section__title howitworks__section-title">How it works</h2>
-					<h3 class="section__header">imperdiet sed euismod nisi.</h3>
-					<p class="howitworks__description section__description">
-						imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor
-						leo a diam sollicitudin tempor
-					</p>
-				</div>
-				<div class="timeline__container">
-					<div class="timeline-item__container">
-						<h4 class="timeline-item__number">1.</h4>
-						<h5 class="timeline-item__title">imperdiet sed tempor</h5>
-						<p class="timeline-item__description">
-							ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus
-							sed viverra tellus in hac habitasse platea dictumst vestibulum
-							rhoncus est pellentesque elit ullamcorper dignissim
-						</p>
-					</div>
-					<div class="timeline-item__container">
-						<h4 class="timeline-item__number">2.</h4>
-						<h5 class="timeline-item__title">nisl nunc mi ipsum</h5>
-						<p class="timeline-item__description">
-							imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor
-							leo a diam sollicitudin tempor id eu nisl nunc mi ipsum.
-						</p>
-					</div>
-					<div class="timeline-item__container">
-						<h4 class="timeline-item__number">1.</h4>
-						<h5 class="timeline-item__title">lorem mollis aliquam</h5>
-						<p class="timeline-item__description">
-							nullam eget felis eget nunc lobortis mattis aliquam faucibus purus
-							in massa tempor nec feugiat nisl pretium fusce id velit ut tortor.
-						</p>
-					</div>
-				</div>
-			</section>
-		</div>
-		<div class="about-us__color-wrapper">
-			<section class="about-us section container" id="about-us">
-				<div class="about-us__container grid">
-					<div class="about-us__data section__data">
-						<h2 class="section__title about-us__section-title">About us</h2>
-						<h3 class="section__header">
-							etiam tempor orci eu lobortis elementum nibh tellus
-						</h3>
-						<p class="about-us__description section__description">
-							imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor
-							leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus
-							vitae aliquet nec ullamcorper sit amet risus nullam eget felis
-							eget nunc lobortis mattis aliquam faucibus purus in massa tempor
-							nec feugiat nisl pretium fusce id velit ut tortor pretium viverra
-							suspendisse potenti nullam
-						</p>
-					</div>
-					<div class="about-us__images">
-						<img
-							src="assets/img/natalia-perfil.jpg"
-							alt=""
-							class="about-us__img"
-						/>
-					</div>
-				</div>
-			</section>
-		</div>
-		<section class="contact section container" id="contact">
-			<div class="grid contact__container">
-				<div class="contact__data section__data">
-					<h2 class="section__title contact__section-title">Contact</h2>
-					<h3 class="section__header">Begin your healthcare journey.</h3>
-					<p class="contact__description section__description"></p>
-					<ul class="contact-timeline__container">
-						<li class="contact-timeline__item">
-							<div class="contact-timeline__icon">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									style="fill: #006d77"
-								>
-									<path
-										d="m18.988 2.012 3 3L19.701 7.3l-3-3zM8 16h3l7.287-7.287-3-3L8 13z"
-									></path>
-									<path
-										d="M19 19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .896-2 2v14c0 1.104.897 2 2 2h14a2 2 0 0 0 2-2v-8.668l-2 2V19z"
-									></path>
-								</svg>
-							</div>
-							et ultrices neque ornare aenean euismod elementum nisi quis
-						</li>
-						<li class="contact-timeline__item">
-							<div class="contact-timeline__icon">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									style="fill: #006d77"
-								>
-									<path
-										d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"
-									></path>
-									<path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path>
-								</svg>
-							</div>
-							ullamcorper velit sed ullamcorper morbi tincidunt ornare
-						</li>
-						<li class="contact-timeline__item">
-							<div class="contact-timeline__icon">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									style="fill: #006d77"
-								>
-									<path
-										d="M18 7c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-3.333L22 17V7l-4 3.333V7z"
-									></path>
-								</svg>
-							</div>
-							aliquam faucibus purus in massa tempor nec feugiat nisl.
-						</li>
-					</ul>
-				</div>
-				<div class="form-container">
-					<form id="contact-form">
-						<div class="form-row">
-							<div class="input-data">
-								<input type="text" name="name" required />
-								<label for="name">Name</label>
-							</div>
-							<div class="input-data">
-								<input type="email" name="email" required />
-								<label for="email">Email</label>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="input-data">
-								<input type="tel" name="phone" required id="phone"/>
-								<label for="phone">Phone</label>
-							</div>
-							<div class="input-data">
-								<input type="text" name="zipcode" required />
-								<label for="zipcode">Zipcode</label>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="input-data">
-								<input type="number" name="age" required />
-								<label for="age">Age</label>
-							</div>
-							<div class="input-data">
-								<input type="text" name="income" required id="income"/>
-								<label for="income">Income</label>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="input-data">
-								<input type="text" name="deductible" required id="deductible"/>
-								<label for="deductible">Deductible</label>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="input-data textarea">
-								<textarea rows="8" name="mensaje" cols="80" required></textarea>
-								<br />
-								<label for="mensaje">Medications</label>
-								<br />
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="button-wrapper">
-								<button type="submit">send</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
-		<section class="questions section container" id="questions">
-			<div class="questions__data section__data">
-			  <h2 class="section__title questions__section-title">
-				Frequently Asked Questions
-			  </h2>
-			  <p class="questions__description section__description">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			  </p>
-			</div>
-			<div class="questions__container">
-			  <button class="accordion">
-				<p class="question__number">01</p>
-				<h3 class="question__title">arcu non sodales neque sodales ut?</h3>
-			  </button>
-			  <div class="panel">
-				<p class="question__answer">
-					risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas
-				</p>
-			  </div>
-			  <button class="accordion">
-				<p class="question__number">02</p>
-				<h3 class="question__title">sit amet mattis vulputate enim nulla aliquet porttitor?</h3>
-			  </button>
-			  <div class="panel">
-				<p class="question__answer">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-				</p>
-			  </div>
-			  <button class="accordion">
-				<p class="question__number">03</p>
-				<h3 class="question__title">parturient montes nascetur ridiculus</h3>
-			  </button>
-			  <div class="panel">
-				<p class="question__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-			  </div>
-			  <button class="accordion">
-				<p class="question__number">04</p>
-				<h3 class="question__title">eu facilisis sed odio morbi quis commodo odio aenean sed?</h3>
-			  </button>
-			  <div class="panel">
-				<p class="question__answer">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-				</p>
-			  </div>
-			</div>
-		  </section>
-		<footer class="footer" id="footer">
-			<div class="footer__container grid">
-			  <div class="footer_section-container">
-				<div class="footer__logo-container">
-				  <a href="#home">
-		 <!--     <img class="footer__logo" src="logo.png" /> -->
-				  </a>
-				  <h2 class="logo__title">AngelHealth</h2>
-				</div>
-			
-			  </div>
-			  <div class="footer_section-container">
-				<div class="footer__nav-container">
-				  <div class="footer__nav-column">
-					<h3 class="footer__nav-title footer__title-decor">Links</h3>
-					<ul>
-					  <li><a href="#services">Services</a></li>
-					  <li><a href="#howitworks">How It Works </a></li>
-					  <li><a href="#about-us">About Us</a></li>
-					</ul>
-				  </div>
-				  <div class="footer__nav-column">
-					<h3 class="footer__nav-title" style="visibility: hidden">
-					  Links
-					</h3>
-					<ul>
-					  <li><a href="#contact">Contact</a></li>
-					  <li><a href="#FAQ">Frequently Asked Questions</a></li>
-					</ul>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="footer_bottom">
-			  <p>Copyright © 2022. AngelHealth. All rights reserved.</p>
-			  <p>This site is protected by reCAPTCHA and the Google
-				<a href=”https://policies.google.com/privacy”>Privacy Policy</a> and <a href=”https://policies.google.com/terms”>Terms of Service</a> apply.</p>
-			</div>
-		  </footer>
-		  <script src="assets/js/main.js"></script>
-	</body>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__container">
+        <a href="#home" class="nav__logo">
+          <img src="logo-placeholder-image.png" />
+          </a>
+        <div id="menu">
+          <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>          
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="#howitworks">How it works</a></li>
+              <li><a href="#about-us">About us</a></li>
+              <li><a href="#questions">FAQs</a></li>
+            </ul>
+          </nav>
+        
+        </div>
+        <a href="#contact" class="contact__button">Get started</a>
+        <div class="menu-bg" id="menu-bg"></div>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <div class="home__container">
+        <div class="home__data">
+            <h1 class="home__title">Your Health, Our Priority</h1>
+            <p class="home__description">
+                At [Your Health Insurance Company], we provide comprehensive health insurance plans to ensure you and your family stay protected. Get access to top-notch medical care and support. Take the first step towards a healthier future.
+            </p>
+            <a href="#contact" class="home__btn">Get a Free Quote</a>
+        </div>
+      </div>
+  </section>  
+    <div class="howitworks__color-wrapper">
+      <section class="howitworks section container" id="howitworks">
+        <div class="howitworks__data section__data">
+          <h2 class="section__title howitworks__section-title">How it works</h2>
+          <h3 class="section__header">Easy Steps to Coverage</h3>
+          <p class="howitworks__description section__description">
+              Signing up for health insurance is simple and straightforward. Follow these easy steps to get covered.
+          </p>
+        </div>
+        <div class="timeline__container">
+          <div class="timeline-item__container">
+            <h4 class="timeline-item__number">1.</h4>
+            <h5 class="timeline-item__title">Get a Free Quote</h5>
+            <p class="timeline-item__description">
+                Provide some basic information about yourself to receive a personalized quote. Our quick and easy online form takes just a few minutes.
+            </p>
+          </div>
+          <div class="timeline-item__container">
+            <h4 class="timeline-item__number">2.</h4>
+            <h5 class="timeline-item__title">Choose Your Plan</h5>
+            <p class="timeline-item__description">
+                Compare different plans and select the one that best fits your needs and budget. UnitedHealthcare offers a variety of options to ensure you find the perfect match.
+            </p>
+          </div>
+          <div class="timeline-item__container">
+            <h4 class="timeline-item__number">3.</h4>
+            <h5 class="timeline-item__title">Enroll and Get Covered</h5>
+            <p class="timeline-item__description">
+                Complete the enrollment process online. Once you’re enrolled, you’ll receive your insurance card and can start accessing your benefits immediately.
+            </p>
+          </div>
+        </div>
+    </section>    
+    </div>
+    <div class="about-us__color-wrapper">
+      <section class="about-us section container" id="about-us">
+        <div class="about-us__container grid">
+          <div class="about-us__data section__data">
+            <h2 class="section__title about-us__section-title">About Us</h2>
+            <h3 class="section__header">
+                Zero Deductible, Maximum Care
+            </h3>
+            <p class="about-us__description section__description">
+                We offer zero-deductible health insurance plans that make healthcare accessible and stress-free. Enjoy comprehensive coverage with no hidden costs, ensuring you and your family receive the best care without the financial burden.
+            </p>
+          </div>
+          <div class="about-us__images">
+            <img
+                src="assets/img/company-image.jpg"
+                alt="About Us"
+                class="about-us__img"
+            />
+          </div>
+        </div>
+    </section>    
+    </div>
+    <section class="contact section container" id="contact">
+      <div class="grid contact__container">
+        <div class="contact__data section__data">
+          <h2 class="section__title contact__section-title">Contact</h2>
+          <h3 class="section__header">Begin your healthcare journey.</h3>
+          <p class="contact__description section__description"></p>
+          <ul class="contact-timeline__container">
+            <li class="contact-timeline__item">
+              <div class="contact-timeline__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: #006d77"
+                >
+                  <path
+                    d="m18.988 2.012 3 3L19.701 7.3l-3-3zM8 16h3l7.287-7.287-3-3L8 13z"
+                  ></path>
+                  <path
+                    d="M19 19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .896-2 2v14c0 1.104.897 2 2 2h14a2 2 0 0 0 2-2v-8.668l-2 2V19z"
+                  ></path>
+                </svg>
+              </div>
+              Enroll online and start your coverage today.
+            </li>
+            <li class="contact-timeline__item">
+              <div class="contact-timeline__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: #006d77"
+                >
+                  <path
+                    d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"
+                  ></path>
+                  <path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path>
+                </svg>
+              </div>
+              Get a personalized quote in minutes.
+            </li>
+            <li class="contact-timeline__item">
+              <div class="contact-timeline__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: #006d77"
+                >
+                  <path
+                    d="M18 7c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-3.333L22 17V7l-4 3.333V7z"
+                  ></path>
+                </svg>
+              </div>
+              Speak with our licensed agents.
+            </li>
+          </ul>
+        </div>
+        <div class="form-container">
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="input-data">
+                <input type="text" name="name" required />
+                <label for="name">Name</label>
+              </div>
+              <div class="input-data">
+                <input type="email" name="email" required />
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data">
+                <input type="tel" name="phone" required id="phone"/>
+                <label for="phone">Phone</label>
+              </div>
+              <div class="input-data">
+                <input type="text" name="zipcode" required />
+                <label for="zipcode">Zipcode</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data">
+                <input type="number" name="age" required />
+                <label for="age">Age</label>
+              </div>
+              <div class="input-data">
+                <input type="text" name="income" required id="income"/>
+                <label for="income">Income</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data">
+                <input type="text" name="deductible" required id="deductible"/>
+                <label for="deductible">Deductible</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data textarea">
+                <textarea rows="8" name="mensaje" cols="80" required></textarea>
+                <br />
+                <label for="mensaje">Medications</label>
+                <br />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="button-wrapper">
+                <button type="submit">send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="questions section container" id="questions">
+      <div class="questions__data section__data">
+        <h2 class="section__title questions__section-title">
+          Frequently Asked Questions
+        </h2>
+        <p class="questions__description section__description">
+          Here are some common questions about our health insurance plans.
+        </p>
+      </div>
+      <div class="questions__container">
+        <button class="accordion">
+          <p class="question__number">01</p>
+          <h3 class="question__title">What types of health insurance plans do you offer?</h3>
+        </button>
+        <div class="panel">
+          <p class="question__answer">
+            We offer a variety of zero-deductible health insurance plans tailored for individuals aged 20-40. These plans provide comprehensive coverage with no hidden costs.
+          </p>
+        </div>
+        <button class="accordion">
+          <p class="question__number">02</p>
+          <h3 class="question__title">Are there any pre-existing condition exclusions?</h3>
+        </button>
+        <div class="panel">
+          <p class="question__answer">
+            Our plans are designed for individuals without any pre-existing health conditions or ongoing medications, ensuring you get the best possible rates and coverage.
+          </p>
+        </div>
+        <button class="accordion">
+          <p class="question__number">03</p>
+          <h3 class="question__title">How do I enroll in a plan?</h3>
+        </button>
+        <div class="panel">
+          <p class="question__answer">
+            Enrolling is easy! Simply fill out our online application form, get a personalized quote, and choose the plan that best fits your needs. Our agents are available to assist you through the process.
+          </p>
+        </div>
+        <button class="accordion">
+          <p class="question__number">04</p>
+          <h3 class="question__title">What kind of coverage can I expect?</h3>
+        </button>
+        <div class="panel">
+          <p class="question__answer">
+            Our plans offer comprehensive coverage including preventative care, emergency services, and access to a wide network of healthcare providers, all with zero deductible.
+          </p>
+        </div>
+      </div>
+    </section>  
+    <footer class="footer" id="footer">
+      <div class="footer__container grid">
+        <div class="footer_section-container">
+        <div class="footer__logo-container">
+          <a href="#home">
+     <!--     <img class="footer__logo" src="logo.png" /> -->
+          </a>
+          <h2 class="logo__title">AngelHealth</h2>
+        </div>
+      
+        </div>
+        <div class="footer_section-container">
+        <div class="footer__nav-container">
+          <div class="footer__nav-column">
+          <h3 class="footer__nav-title footer__title-decor">Links</h3>
+          <ul>
+            <li><a href="#howitworks">How It Works </a></li>
+            <li><a href="#about-us">About Us</a></li>
+          </ul>
+          </div>
+          <div class="footer__nav-column">
+          <h3 class="footer__nav-title" style="visibility: hidden">
+            Links
+          </h3>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#FAQ">FAQs</a></li>
+          </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p>Copyright © 2022. AngelHealth. All rights reserved.</p>
+        <p>This site is protected by reCAPTCHA and the Google
+        <a href=”https://policies.google.com/privacy”>Privacy Policy</a> and <a href=”https://policies.google.com/terms”>Terms of Service</a> apply.</p>
+      </div>
+      </footer>
+      <script src="assets/js/main.js"></script>
+  </body>
 </html>
+
