@@ -155,7 +155,7 @@ body {
 	margin: auto;
 
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1086px;
 	height: 80px;
 
 	padding: 10px;
@@ -176,8 +176,8 @@ body {
 }
 
 .contact__button {
-	width: 200px;
-	height: 30px;
+	width: 160px;
+	height: 35px;
 
 	display: flex;
 	justify-content: center;
@@ -311,6 +311,8 @@ body {
 	width: 60px;
 	height: 60px;
 
+	margin-top: -10px;
+
 	img {
 		width: 100%;
 		height: 100%;
@@ -334,9 +336,11 @@ body {
 .home__container {
 	background-size: cover;
 	background-image: url("assets/img/famiky3.jpg");
-	background-position: 20% 50%;
+	background-position: 40% 50%;
 	width: 100vw;
 	height: 100vh;
+
+	padding: 0 30px;
 
 	display: flex;
 	align-items: flex-end;
@@ -349,25 +353,26 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 100px 50px;
+	padding: 30px 30px;
 	z-index: 2;
 
-	max-width: 450px;
+	width: 100%;
+	max-width: 400px;
 	max-height: fit-content;
 
 	background-color: #d5f6fbd7;
 	border-radius: 30px;
 
-	margin-bottom: 10%;
+	margin-bottom: 132px;
 }
 
 .home__title {
 	font-family: var(--bigger-title);
 	color: var(--darkblue-color);
-	font-size: 56px;
+	font-size: 42px;
 	font-weight: 500;
 	margin-bottom: var(--mb-1-5);
-	line-height: 65px;
+	line-height: 42px;
 }
 
 .home__description {
@@ -479,7 +484,6 @@ body {
 .about-us__img {
 	position: relative;
 	width: 280px;
-	border-radius: 50%;
 }
 
 .form-container {
@@ -658,6 +662,7 @@ body {
 	color: black;
 	letter-spacing: 2px;
 	padding-left: 1.7rem;
+	padding-right: 1rem;
 	text-align: left;
 }
 
@@ -823,7 +828,7 @@ body {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
 	.container {
 		margin-left: var(--mb-1);
 		margin-right: var(--mb-1);
@@ -898,7 +903,7 @@ body {
 		margin-bottom: 0px;
 		border-radius: 20px;
 
-		width: 240px;
+		width: 200px;
 		height: 40px;
 		background-color: var(--mustard-color);
 
@@ -924,10 +929,18 @@ body {
 		padding-top: 6rem;
 		grid-template-columns: 1fr max-content;
 		align-items: center;
+		background-position: initial;
 	}
 
 	.home__data {
 		margin: 0 auto;
+		max-width: 450px;
+		padding: 50px 60px;
+	}
+
+	.home__title {
+		font-size: 56px;
+		line-height: 56px;
 	}
 
 	.about-us__color-wrapper > section {
@@ -1005,6 +1018,12 @@ body {
 		margin-right: 2rem;
 	}
 }
+
+//@media screen and (min-width: 925px) and (max-width: 992) {
+//	.contact__button {
+//		font-size: 8px;
+//	}
+//}
 
 @media screen and (min-width: 992px) {
 	.section__title {
@@ -1095,6 +1114,10 @@ body {
 	.footer__container {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.nav__logo {
+		margin-top: initial;
+	}
 }
 
 /* For large devices */
@@ -1116,6 +1139,19 @@ body {
 
 	.scrollup {
 		right: 3rem;
+	}
+}
+
+@media screen and (max-width: 365px) {
+	.contact__button {
+		font-size: 12px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.contact__button {
+		margin-right: 80px;
 	}
 }
 
