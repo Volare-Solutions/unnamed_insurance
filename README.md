@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a static website that allows users to request pricing information for health insurance plans. It includes a form for users to submit their details, which is then handled by a serverless function hosted on Vercel. The data is stored in a PostgreSQL database.
+This project is a static website that allows users to request pricing information for health insurance plans. It includes a form for users to submit their details, which is then handled by a serverless function hosted on Vercel.
 
 ## Features
 
