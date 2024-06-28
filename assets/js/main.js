@@ -125,3 +125,43 @@ function updateValuePhone(e) {
 	}
 	phoneField.value = input;
 }
+
+function clearForm() {
+	document.getElementById('contact-form').reset();
+}
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+	event.preventDefault();
+	const formData = new FormData(this);
+	const data = Object.fromEntries(formData.entries());
+
+	fetch('/api/submit-form', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(data),
+	})
+	.then(response => {
+		if (!response.ok) {
+			throw new Error('Network response was not ok ' + response.statusText);
+		}
+		return response.json();
+	})
+	.then(data => {
+		clearForm();
+		showToast('Form submitted successfully!', 'success');
+		console.log('Success:', data);
+	})
+	.catch(error => {
+		console.error('Error:', error);
+		showToast('There was a problem with the form submission.', 'error');
+	});
+});
+
+function showToast(message, type) {
+	const toast = document.getElementById('toast');
+	toast.className = `toast ${type} show`;
+	toast.innerHTML = message;
+	setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
+}
