@@ -15,6 +15,6 @@ CREATE TABLE contact_form (
   age INTEGER NOT NULL,
   income VARCHAR(50) NOT NULL,
   deductible VARCHAR(50) NOT NULL,
-  medications TEXT NOT NULL,
+  medications TEXT,
   submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
