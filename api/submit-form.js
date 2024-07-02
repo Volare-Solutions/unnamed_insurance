@@ -1,6 +1,8 @@
-// api/submit-form.js
 import { Client } from "pg";
 import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export default async (req, res) => {
   if (req.method !== "POST") {
@@ -26,6 +28,11 @@ export default async (req, res) => {
       [name, email, phone, zipcode, age, income, deductible, medications]
     );
 
+    // Debug logging for environment variables
+    console.log("SMTP_HOST:", process.env.SMTP_HOST);
+    console.log("SMTP_PORT:", process.env.SMTP_PORT);
+    console.log("SMTP_USER:", process.env.SMTP_USER);
+
     // Send email to management with lead's information
     let transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -50,7 +57,7 @@ export default async (req, res) => {
 
     res.status(200).json({ status: "success" });
   } catch (err) {
-    console.error(err);
+    console.error("Error:", err);
     res.status(500).json({ error: "Internal Server Error" });
   } finally {
     await client.end();
