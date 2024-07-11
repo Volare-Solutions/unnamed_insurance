@@ -160,8 +160,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 function showToast(message, type) {
-	const toast = document.getElementById('toast');
-	toast.className = `toast ${type} show`;
-	toast.innerHTML = message;
-	setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
+  const toast = document.getElementById('toast');
+  toast.className = `toast ${type} show`;
+  toast.innerHTML = message;
+  setTimeout(() => { 
+    toast.className = toast.className.replace("show", ""); 
+    // Reset opacity and top position after fadeout to ensure it starts from initial state next time
+    setTimeout(() => {
+      toast.style.opacity = 0;
+      toast.style.top = '10px';
+    }, 500);
+  }, 3000); // Keep toast visible for 3 seconds
 }

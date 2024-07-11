@@ -1216,6 +1216,8 @@ body {
   right: 20px;
   font-size: 17px;
   padding: 10px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s, top 0.5s; /* Transition for smooth visibility */
 }
 
 .toast.success {
@@ -1228,26 +1230,6 @@ body {
 
 .toast.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein {
-  from {top: 0; opacity: 0;} 
-  to {top: 20px; opacity: 1;}
-}
-
-@keyframes fadein {
-  from {top: 0; opacity: 0;}
-  to {top: 20px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-  from {top: 20px; opacity: 1;} 
-  to {top: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-  from {top: 20px; opacity: 1;}
-  to {top: 0; opacity: 0;}
+  opacity: 1; /* Make the toast visible */
+  top: 20px; /* Move the toast to the visible position */
 }
