@@ -40,8 +40,8 @@ export default async (req, res) => {
     });
 
     let mailOptions = {
-      from: '"Lead Website" <graysoncrozier@yahoo.com>', // sender address
-      to: "graysoncrozier40@gmail.com", // management email address
+      from: '"Health Insurance Website" <zerodeductible74@gmail.com>', // sender address
+      to: "godleads444@gmail.com", // management email address
       subject: "New Lead Submission",
       text: `New lead submission received:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nZipcode: ${zipcode}\nAge: ${age}\nIncome: ${income}\nDeductible: ${deductible}\nMedications: ${medications}`, // plain text body
       html: `<p>New lead submission received:</p><ul><li><strong>Name:</strong> ${name}</li><li><strong>Email:</strong> ${email}</li><li><strong>Phone:</strong> ${phone}</li><li><strong>Zipcode:</strong> ${zipcode}</li><li><strong>Age:</strong> ${age}</li><li><strong>Income:</strong> ${income}</li><li><strong>Deductible:</strong> ${deductible}</li><li><strong>Medications:</strong> ${medications}</li></ul>`, // html body
