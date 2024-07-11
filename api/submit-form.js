@@ -28,16 +28,11 @@ export default async (req, res) => {
       [name, email, phone, zipcode, age, income, deductible, medications]
     );
 
-    // Debug logging for environment variables
-    console.log("SMTP_HOST:", process.env.SMTP_HOST);
-    console.log("SMTP_PORT:", process.env.SMTP_PORT);
-    console.log("SMTP_USER:", process.env.SMTP_USER);
-
     // Send email to management with lead's information
     let transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: process.env.SMTP_PORT,
-      secure: true, // use SSL
+      secure: false, // use SSL
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
